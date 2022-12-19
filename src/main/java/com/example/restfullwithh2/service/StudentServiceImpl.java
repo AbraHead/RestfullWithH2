@@ -12,31 +12,31 @@ import java.beans.Transient;
 @Service
 public class StudentServiceImpl implements StudentService {
 
-    @Qualifier("studentDAO")
+//    @Qualifier("studentDAO")
     @Autowired
-    private StudentDAO studentDao;
+    private StudentDAO studentDAO;
 
     @Override
     @Transactional
     public List<Student> getAllStudents(){
-        return studentDao.getAllStudents();
+        return studentDAO.getAllStudents();
     }
 
     @Override
     public Student getStudent(int id) {
-        return studentDao.getStudent(id);
+        return studentDAO.getStudent(id);
     }
 
     @Override
     @Transactional
     public Student saveStudent(Student student){
-        return studentDao.saveStudent(student);
+        return studentDAO.saveStudent(student);
     }
 
     @Override
     @Transactional
     public void deleteStudent(int id) {
-        studentDao.deleteStudent(id);
+        studentDAO.deleteStudent(id);
     }
 
 
