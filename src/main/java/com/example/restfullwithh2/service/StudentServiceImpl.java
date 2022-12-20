@@ -1,13 +1,12 @@
 package com.example.restfullwithh2.service;
 
-import jakarta.transaction.Transactional;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Service;
 import com.example.restfullwithh2.dao.StudentDAO;
 import com.example.restfullwithh2.entity.Student;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import javax.transaction.Transactional;
 import java.util.List;
-import java.beans.Transient;
 
 @Service
 public class StudentServiceImpl implements StudentService {

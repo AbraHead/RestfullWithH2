@@ -14,8 +14,7 @@ public class MyController {
     private StudentService studentService;
     @GetMapping("/students")
     public List<Student> showAllStudents(){
-        List<Student> allStudents = studentService.getAllStudents();
-        return allStudents;
+        return studentService.getAllStudents();
     }
 
 

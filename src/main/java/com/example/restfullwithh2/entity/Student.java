@@ -1,19 +1,19 @@
 package com.example.restfullwithh2.entity;
 
-import jakarta.persistence.*;
-import lombok.Generated;
 import lombok.Getter;
 import lombok.Setter;
+
+import javax.persistence.*;
 
 @Setter
 @Getter
 @Entity
-@Table(name="STUDENTS")
+@Table(name = "STUDENTS")
 public class Student {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column
+    @Column(name="id")
     private int id;
 
     @Column(name="name")

@@ -1,8 +1,7 @@
 package com.example.restfullwithh2.dao;
 
 import com.example.restfullwithh2.entity.Student;
-import jakarta.persistence.EntityManager;
-import jakarta.persistence.Query;
+import javax.persistence.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
